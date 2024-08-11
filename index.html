@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- 
+            Menu
+            Vai ser um menu Hamburguer em Telas menores
+        -->
+        <button id="botao_menu" onclick="menuHamburguer()">
+            <!-- Imagem do menu  -->
+        </button>
+
+        <nav id="menu">
+            <ul >
+                <li>
+                    <a href="#sobre_mim" onclick="menuHamburguer()">Sobre Mim</a>
+                </li>
+                <li>
+                    <a href="#formacao" onclick="menuHamburguer()">Formação</a>
+                </li>
+                <li>
+                    <a href="#portfolio" onclick="menuHamburguer()">Meu Portfólio</a>
+                </li>
+                <li>
+                    <a href="#contato" onclick="menuHamburguer()">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Conteudo Principal -->
+    <main>
+
+        <!-- Seção Sobre Mim -->
+        <section>
+            <h2 id="sobre_mim"> Sobre Mim</h2>
+        
+            <p>Aqui vai uma foto minha</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam officiis voluptas assumenda ipsam nisi saepe quia minima, expedita, provident vero atque consequatur facere recusandae quae veritatis adipisci ut maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi ad illum sapiente dolorum placeat obcaecati ipsum. Quas sint sequi eum tempora eligendi culpa, recusandae aut ullam, magni ad illum!</p>
+
+        </section>
+
+        <!-- Seção Formação Acadêmica -->
+        <section>
+
+            <h2 id="formacao">Formação</h2>
+
+                <!-- Formação -->
+                <div>
+                    <ul>
+                        <li>Análise e Desenvolvimento de Sistemas - Uninter</li>
+                    </ul>
+                </div>
+
+        </section>
+
+        <!-- Seção Meu Portfólio -->
+        <section>
+            <h2 id="portfolio">Meu Portfólio</h2>
+
+            <!-- Lista de Links do Portfólio -->
+            <ul>
+                <li>
+                    <a href="">link</a>
+                </li>
+                <li>
+                    <a href="">link</a>
+                </li>
+                <li>
+                    <a href="">link</a>
+                </li>
+                <li>
+                    <a href="">link</a>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Seção Contato -->
+        <section>
+
+            <h2 id="contato">Contato</h2>
+
+            <div>
+
+                <form action="#">
+                    
+                    <fieldset>
+
+                        <p>
+                            <label for="nome_id">Nome</label>
+                            <input type="text" name="nome" id="nome_id">
+                        </p>
+
+                        <p>
+                            <label for="email_id">Email</label>
+                            <input type="email" name="email" id="email_id">
+                        </p>
+
+                        <p>
+                            <label for="mensagem_id">Mensagem</label>
+                            <input type="textarea" name="mensagem" id="mensagem_id">
+                        </p>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>César Gehres</p>
+    </footer>
+</body>
+</html>

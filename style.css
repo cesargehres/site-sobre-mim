@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+:root {
+    --menu-cor: #404446;
+    --menu-cor-hover: #686c6e;
+    --background-titulo: #306487;
+    --texto-menu: #FFFFFF;
+    --background-principal: #D5D0D0;
+    
+}
+
+
+
+/* Configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+body {
+    background-color: white;
+}
+
+
+header {
+    width: 100vw;
+
+    text-align: center;
+    background-color: var(--menu-cor);
+}
+
+section {
+    padding: 16px 0;
+}
+
+
+h2 {
+    margin: 32px 0;
+    padding: 16px 0;
+
+    text-align: center;
+      
+    background-color: var(--background-titulo);
+    color: var(--texto-menu);
+}
+
+p {
+    margin: 20px 16px;
+    text-align: justify;
+    text-indent: 16px;
+}
+
+ul {
+    list-style: none;
+    margin: 16px;
+}
+
+
+/* Menu */
+/* Botao menu */
+#botao_menu {
+    display: inline;
+    height: 64px;
+    width: 64px;
+
+    background-image: url(images/menu.png);
+    background-repeat: no-repeat;
+    background-color: var(--menu-cor);
+
+    border: none;
+    margin: 0;
+}
+
+#botao_menu:hover {
+    background-color: var(--menu-cor-hover);
+}
+
+
+/* Links Menu */
+#menu {
+    display: none;
+}
+
+
+header > nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: var(--menu-cor);
+}
+
+header > nav > ul {
+    margin: 0;
+
+    list-style: none;
+}
+
+header > nav > ul > li {
+    padding: 10px 32px;
+
+    text-align: center;
+    
+}
+
+header > nav > ul > li:hover {
+    background-color: var(--menu-cor-hover);
+}
+
+header > nav > ul > li > a {
+    color: var(--texto-menu);
+    text-decoration: none;
+
+    font-size: 32px;
+}
+
+
+/* Conteudo Principal */
+main {
+    background-color: var(--background-principal);
+}
+
+main > section:first-of-type {
+    padding-top: 0;
+}
+
+main > section > h2:first-of-type {
+    margin-top: 0;
+}
+
+
+
+
