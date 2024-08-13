@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
 :root {
-    --menu-cor: #404446;
+    --menu-cor: #303132;
     --menu-cor-hover: #686c6e;
     --background-titulo: #306487;
     --texto-menu: #FFFFFF;
     --background-principal: #D5D0D0;
-    
 }
 
 
@@ -21,41 +20,16 @@
 }
 
 body {
+    width: 100vw;
     background-color: white;
 }
 
 
 header {
-    width: 100vw;
+    width: auto;
 
     text-align: center;
     background-color: var(--menu-cor);
-}
-
-section {
-    padding: 16px 0;
-}
-
-
-h2 {
-    margin: 32px 0;
-    padding: 16px 0;
-
-    text-align: center;
-      
-    background-color: var(--background-titulo);
-    color: var(--texto-menu);
-}
-
-p {
-    margin: 20px 16px;
-    text-align: justify;
-    text-indent: 16px;
-}
-
-ul {
-    list-style: none;
-    margin: 16px;
 }
 
 
@@ -63,15 +37,15 @@ ul {
 /* Botao menu */
 #botao_menu {
     display: inline;
-    height: 64px;
-    width: 64px;
+    height: 66px;
+    width: 66px;
 
     background-image: url(images/menu.png);
     background-repeat: no-repeat;
     background-color: var(--menu-cor);
 
     border: none;
-    margin: 0;
+    border-radius: 10px;
 }
 
 #botao_menu:hover {
@@ -120,6 +94,7 @@ header > nav > ul > li > a {
 
 /* Conteudo Principal */
 main {
+    margin: -4px 0;
     background-color: var(--background-principal);
 }
 
@@ -131,6 +106,65 @@ main > section > h2:first-of-type {
     margin-top: 0;
 }
 
+section {
+    padding: 16px 0;
+}
 
+h2 {
+    margin: 32px 0;
+    padding: 16px 0;
 
+    text-align: center;
+      
+    background-color: var(--background-titulo);
+    color: var(--texto-menu);
+}
 
+p {
+    margin: 20px 16px;
+    text-align: justify;
+    text-indent: 16px;
+}
+
+ul {
+    list-style: none;
+    margin: 16px;
+    
+}
+
+/* Portfólio */
+section.portfolio {
+    text-align: center;
+}
+
+/* Formulário */
+form > fieldset{
+    border: none;
+    text-align: center;
+}
+
+form > fieldset > p {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+form > fieldset > p > label {
+    margin-bottom: 6px;
+    text-indent: 0;
+}
+
+form > fieldset > p > input {
+    width: 250px;
+}
+
+form > fieldset > button {
+    display: inline;
+}
+
+/* Rodapé */
+footer {
+    height: 30px;
+    background-color: var(--menu-cor);
+}
