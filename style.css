@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #252728, var(--texto-menu));
+    background-image: linear-gradient(to bottom,var(--menu-cor), rgb(184, 184, 184), var(--menu-cor));
 }
 
 
@@ -29,13 +29,23 @@ header {
 
     text-align: center;
     background-color: var(--menu-cor);
+
+    box-shadow: rgba(1, 1, 1, 0.301) 1px 2px 3px 1px;
+}
+
+header > h1 , strong {
+    padding: 4px 0;
+
+    color: white;
+    background-color: var(--background-titulo);
+
+    font-size: 24px;
 }
 
 
 /* Menu */
 /* Botao menu */
 #botao_menu {
-    display: inline;
     height: 66px;
     width: 66px;
 
@@ -49,16 +59,14 @@ header {
 
 #botao_menu:hover {
     background-color: var(--menu-cor-hover);
+    cursor: pointer;
 }
+
 
 
 /* Links Menu */
-#menu {
-    display: none;
-}
-
-
 header > nav {
+    display: none;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -73,21 +81,23 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
-    padding: 10px 32px;
 
     text-align: center;
-    
-}
-
-header > nav > ul > li:hover {
-    background-color: var(--menu-cor-hover);
+    margin: 0;
 }
 
 header > nav > ul > li > a {
-    color: var(--texto-menu);
-    text-decoration: none;
+    display: block;
+    padding: 12px 32px;
 
-    font-size: 32px;
+    color: var(--texto-menu);
+    background-color: var(--menu-cor);
+    text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: var(--menu-cor-hover);
+    cursor: pointer;
 }
 
 
@@ -95,9 +105,12 @@ header > nav > ul > li > a {
 main {
     margin: -4px 0;
     background-color: var(--background-principal);
+
+    box-shadow: rgba(1, 1, 1, 0.301) 1px 2px 3px 1px;
 }
 
 main > section:first-of-type {
+    margin-top: 2px;
     padding-top: 0;
 }
 
@@ -124,6 +137,8 @@ h2 {
       
     background-color: var(--background-titulo);
     color: var(--texto-menu);
+
+    box-shadow: rgba(1, 1, 1, 0.301) 1px 2px 3px 1px;
 }
 
 p {
@@ -168,12 +183,36 @@ form > fieldset > p > input {
 
 /* Rodapé */
 footer {
-    height: 30px;
+    padding: 10px;
+
     background-color: var(--menu-cor);
+    color: white;
+    text-align: center;
 }
 
 
 @media (min-width: 600px) {
+    #botao_menu {display: none;}
+
+    #menu {
+        display: block;
+        position: relative;
+    }
+
+    #menu > ul {
+        display: flex;
+        width: auto;
+
+        flex-direction: row;
+        align-items: center;
+
+        justify-content: space-around;
+    }
+
+    #menu > ul > li > a {
+        font-size: 2.0vw;
+    }
+
     main {
         width: 80vw;
         max-width: 1000px;
